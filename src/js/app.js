@@ -1,6 +1,6 @@
 export function getSpecialAttack(obj) {
   const extractedArray = [];
-  const specialArray = obj.special;
+  const { special: specialArray } = obj;
   for (let i = 0; i < specialArray.length; i++) {
     if (!specialArray[i].description) {
       specialArray[i].description = "Описание недоступно";
